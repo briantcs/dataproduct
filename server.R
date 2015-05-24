@@ -1,7 +1,7 @@
 library(shiny)
 library(datasets)
 
-diabetesRisk <- function(glucose) glucose / 200
+diabetesRisk <- function(glucose) glucose / 250
 shinyServer(
   function(input, output) {
     output$inputValue <- renderPrint({input$glucose})
